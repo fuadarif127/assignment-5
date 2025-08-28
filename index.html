@@ -19,9 +19,9 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-[HindMadurai]">
+  <body class="font-['hind_madurai']">
     <header>
-      <nav class="flex flex-col sm:flex-row gap-4 justify-between p-10">
+      <nav class="flex flex-col sm:flex-row gap-5 justify-between p-12">
         <div class="flex gap-3 justify-center">
           <img class="w-12 h-12" src="./assets/logo.png" alt="" />
           <h1 class="font-extrabold text-xl text-[#006747] leading-5">
@@ -39,28 +39,32 @@
           <div
             class="bg-[#41ff6b1a] w-30 flex justify-center items-center p-3 rounded-[50px]"
           >
-            <span class="text-2xl font-bold">100</span>
+            <span id="nav-coin" class="text-2xl font-bold">100</span>
             <img class="w-8 h-8" src="./assets/coin.png" alt="" />
           </div>
 
           <div
             class="bg-[#00a63e] w-30 flex justify-center items-center p-3 rounded-[50px] gap-2 text-white font-[inter]"
           >
-            <span class="text-2xl font-bold">0</span>
+            <span id="nav-copy" class="text-2xl font-bold">0</span>
             <h4>Copy</h4>
           </div>
         </div>
       </nav>
       <!-- banner -->
       <section
-        class="flex justify-center items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]"
+        class="flex justify-center items-center h-50 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] px-5"
       >
         <div class="py-5">
-          <img class="w-22 mx-auto" src="./assets/logo-dark.png" alt="" />
-          <h1 class="text-center text-white font-bold text-[40px]">
+          <img
+            class="w-12 sm:w-22 mx-auto"
+            src="./assets/logo-dark.png"
+            alt=""
+          />
+          <h1 class="text-center text-white font-bold text-2xl sm:text-4xl">
             Emergency Service Directory
           </h1>
-          <p class="text-center text-white font-semibold text-xl">
+          <p class="text-center text-white font-semibold text-sm sm:text-2xl">
             Government Emergency Services at Your Fingertip – A Project by
             Government of the People’s Republic of Bangladesh
           </p>
@@ -297,12 +301,14 @@
               </h1>
               <button
                 class="p-2 rounded-xl bg-[#00a63e] text-white text-sm"
-                id="clear-btn"
+                id="clear-history"
               >
                 Clear
               </button>
             </div>
-            <div id="history-container"></div>
+            <div id="history-container">
+              
+            </div>
           </div>
         </section>
       </section>
