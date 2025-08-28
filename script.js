@@ -34,7 +34,7 @@ for (const coin of mainCoin) {
       alert(`📞 Calling ${emergencyName} ${hotline}...... `);
       const container = document.getElementById("history-container");
       const divElement = document.createElement("div");
-      const time = new Date().toLocaleTimeString();
+      const time = new Date().toLocaleTimeString("en-US");
       divElement.innerHTML = `<div
                 class="flex justify-between items-center bg-[#fafafa] rounded-lg p-4 mt-4"
               >
