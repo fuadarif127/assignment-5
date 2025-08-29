@@ -30,7 +30,7 @@ for (const coin of mainCoin) {
       document.getElementById("nav-coin").innerText = newNavCoin;
       const hotline = coin.parentNode.parentNode.children[3].innerText;
 
-      const emergencyName = coin.parentNode.parentNode.children[2].innerText;
+      const emergencyName = coin.parentNode.parentNode.children[1].innerText;
       alert(`📞 Calling ${emergencyName} ${hotline}...... `);
       const container = document.getElementById("history-container");
       const divElement = document.createElement("div");
@@ -40,7 +40,7 @@ for (const coin of mainCoin) {
               >
                 <div>
                   <h1 class="font-bold">${emergencyName}</h1>
-                  <p class="font-semibold">${hotline}</p>
+                  <p>${hotline}</p>
                 </div>
                 <div>${time}</div>
               </div>`;
